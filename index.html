@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/master.css">
+
+  <title>Age calculator app</title>
+
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="whole">
+    <div class="special">
+
+      <div class="close">X</div>
+
+      <header>
+        <i class="fa-solid fa-heart"></i>
+        أجمل ماكرة
+      </header>
+      <p>حسناء في درب الهوي لاقيتها</p>
+      <p>تشكو إليّ من الحظوظ العاثرَةْ</p>
+      <p>أعطيتها مفتاح قلبي مرةً</p>
+      <p>لتقيمَ فيه ليلةً و تغادره</p>
+      <p>لكنها من دون أن أدري بها</p>
+      <p>كسرته ، و أنفردتْ بقلبي الماكرة</p>
+    </div>
+
+    <main>
+
+      <form action="" id="enter">
+        <div class="days" id="days">
+          <label for="days" class="day">Day</label>
+          <input type="text" placeholder="DD" id="days">
+          <p class="empty-error">This field is required</p>
+          <p class="invalid-error">Must be a valid day</p>
+          <p class="whole-form-error">Must be a valid date</p>
+        </div>
+
+        <div class="months" id="months">
+          <label for="months" class="month">Month</label>
+          <input type="text" placeholder="MM" id="months">
+          <p class="empty-error">This field is required</p>
+          <p class="invalid-error">Must be a valid month</p>
+        </div>
+
+        <div class="years" id="years">
+          <label for="years" class="year">Year</label>
+          <input type="text" placeholder="YYYY" id="years">
+          <p class="empty-error">This field is required</p>
+          <p class="invalid-error">Must be a valid year</p>
+        </div>
+      </form>
+
+      <div class="mid">
+        <hr>
+        <button class="image">
+          <img src="assets/images/icon-arrow.svg" alt="icon-arrow">
+        </button>
+      </div>
+
+      <section class="result">
+        <div class="yout"><span class="yearsRes">--</span> years</div>
+        <div class="mout"><span class="monthsRes">--</span> months</div>
+        <div class="dout"><span class="daysRes">--</span> days</div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+
+        Coded by <a href="https://github.com/Mahmoudamin11" target="_blank">Mahmoud Mohamed Amin</a>.
+      </div>
+    </footer>
+  </div>
+  <script src="JSS/main.js"></script>
+</body>
+
+</html>

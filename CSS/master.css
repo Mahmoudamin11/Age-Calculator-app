@@ -1,0 +1,258 @@
+/* Start variables */
+:root {
+    /* Primary */
+
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%)
+}
+
+/* End variables */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Off-white);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+div.special {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    transition: 0.3s;
+    color: var(--White);
+    background-color: var(--Purple);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    margin: -70px 0 20px;
+    position: relative;
+    display: none;
+}
+
+div.close {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--White);
+    color: var(--Purple);
+    position: absolute;
+    top: 0;
+    right: -20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Purple);
+    font-size: 16px;
+
+}
+
+main {
+    width: 650px;
+    background-color: var(--White);
+    padding: 30px;
+    padding-right: 0;
+    border-radius: 1rem 1rem 8rem 1rem;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+form label {
+    text-transform: uppercase;
+    color: var(--Smokey-grey);
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+form input {
+    width: 140px;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 2rem;
+    border: 1.5px solid var(--Light-grey);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+p.empty-error {
+    color: var(--Light-red);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+    display: none;
+}
+
+p.invalid-error {
+    color: var(--Light-red);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+    display: none;
+}
+
+p.whole-form-error {
+    color: var(--Light-red);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+    display: none;
+}
+
+
+
+div.mid {
+    position: relative;
+    /* margin-bottom: 20px; */
+}
+
+.image {
+    background-color: var(--Purple);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.image:hover {
+    background-color: var(--Off-black);
+}
+
+hr {
+    width: 530px;
+    border: 0.5px solid var(--Light-grey);
+}
+
+section.result {
+    margin-top: 3rem;
+}
+
+.result div {
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.result span {
+    color: var(--Purple);
+    transition: 0.3s;
+}
+
+/* 660 */
+@media (max-width: 660px) {
+    main {
+        width: 350px;
+        padding: 15px;
+        border-radius: 1rem 1rem 6rem 1rem;
+        padding-right: 0px;
+    }
+
+    form {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mid {
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    hr {
+        width: 270px;
+        margin-right: 15px;
+    }
+
+    form input {
+        width: 80px;
+        height: 50px;
+        font-size: 1rem;
+        padding-left: 15px;
+    }
+
+
+
+    section.result {
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        margin-left: 20px;
+    }
+
+    img {
+        width: 150%;
+    }
+
+    .image {
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+        right: calc(50% - 45px);
+
+    }
+
+    .result div {
+        font-size: 3rem;
+    }
+
+    p.empty-error,
+    p.invalid-error,
+    p.whole-form-error {
+        font-size: 8px;
+        margin-top: 8px;
+    }
+}
